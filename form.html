@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表單練習</title>
+  <style>
+    form{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      border: 2px solid rgb(94, 45, 5);
+      border-radius: 10px;
+      padding: 20px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <!-- mailto:nieves957@gmail.com -->
+  <form action="" method="post" enctype="text/plain">
+    <div >
+      <label for="name">姓名</label>
+      <input type="text" id="name" name="name"placeholder="輸入姓名" maxlength="10" size="5 required>
+    </div>
+    <div>  
+      <label for="password">密碼</label>
+      <input type="password" id="password" placeholder="請輸入密碼" >
+    </div>
+    <label for="memo">意見</label>
+    <textarea name="memo" id="memo" rows="5" ></textarea>
+    <div><button type="button">送出</button></div>
+    <div>
+      <label for="gender">性別</label>
+      <input type="radio" name="gender" value="female" id="">女生
+      <input type="radio" name="gender" value="male id="">男生
+    </div>
+    <div>
+      <label for="">興趣</label>
+      <input type="checkbox" name="hobby" value="sport" id="">運動
+      <input type="checkbox" name="hobby" value="music" id="">音樂
+      <input type="checkbox" name="hobby" value="comic" id="">運動
+  </div>  
+  <label for="">地址</label>
+  <select name="" id="">
+    <option value="taipei">台北</option>
+    <option value="tainan" selected>台南</option>
+    <option value="taichung">台中</option>
+    <option value="kaush">高雄</option>
+  </select>
+
+  <label for="">上傳檔案</label>
+  <input type="file"
+  <div>
+    <input type="submit" value="送出" name="submitBtn" id="">
+    <input type="reset" value="清除" name="resetBtn" id="">
+  </div>  
+</form>
+  
+</body>
+</html>
+

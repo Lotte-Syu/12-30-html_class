@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表單加樣式練習</title>
+  <!-- 表單樣式 -->
+   <style>
+    fieldset{
+      width: 500px;
+      margin: 0 auto;
+      border: 2px solid rgb(170, 92, 10);
+      border-radius: 10px;
+      background-color: lightgray;
+    }
+    legend{
+      border: 2px solid brown;
+      border-radius: 5px;
+      padding: 5px 6px;
+      background-color: lightgray;
+    }
+    em{
+      color: red;
+    }
+    .st{
+      border-bottom: 1px dotted gray;
+      margin: 15px;
+      padding: 10px 0;
+      width: 100%;
+    }
+  
+   </style>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>個人資料一<em>(必填)</em></legend>
+      <!-- 姓名 -->
+      <div class="title st">
+        <label for="name">姓名：</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="st">
+        <label for="email">信箱：</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <!-- 密碼 -->
+       <div class="st">
+        <label for="password">密碼：</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <!-- radio 單選 -->
+       <div class="st">
+        <label for="gender">性別：</label>
+        <input type="radio" value="male" name="gender">男
+        <input type="radio" value="female" name="gender">女
+      </div>
+      <!-- checkbox 複選 -->
+       <div class="st">
+        <label for="">興趣：</label>
+        <input type="checkbox" value="music" name="hobby">音樂
+        <input type="checkbox" value="sport" name="hobby">運動
+        <input type="checkbox" value="reed" name="hobby">閱讀
+        <input type="checkbox" value="movie" name="hobby">電影
+      </div>
+      <!-- 下拉式選單 -->
+      <div class="st">
+        <label for="address">地址：</label>
+        <select>
+          <option value="taipei">台北</option>
+          <option value="tainan" selected>台南</option>
+          <option value="taichung">台中</option>
+        </select>
+      </div>
+      <!-- textarea 文字區塊 -->
+       <div class="st">
+        <label for="memo">意見：</label>
+        <textarea name="meme" id="memo" rows="10"></textarea>
+      </div>
+    
+      <!-- 按鈕 -->
+      <div style="text-align: center;" >
+        <input type="submit">
+        <input type="reset">
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>

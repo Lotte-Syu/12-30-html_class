@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多重超連結</title>
+  <style>
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    a:visited{
+      color: lightcoral;
+    }
+    a:hover{
+      color: aquamarine;
+    }
+    a:active{
+      color: blue;             
+    }
+
+    /* ------------------------------ */
+    a.nav-link2, a.nav-link2:visited{
+      color: rgb(200, 104, 9);
+      text-decoration: none;
+    }
+
+    a.nav-link2:hover, a.nav-link2:active{
+      color: rgb(118, 131, 174);
+      text-decoration: underline;
+    }
+    /* ------------------------------------ */
+    a.nav-link, a.nav-link:visited{
+      color: rgb(128, 240, 160);
+      text-decoration: none;
+    }
+
+    a.nav-link:hover, a.nav-link:active{
+      color: rgb(233, 27, 175);
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div style="display: flex; flex-direction: column;">
+    <a href="" class="nav-link">第一種連結</a>
+    <a href="" class="nav-link2">第二種連結</a>
+    <a href="">第三種連結</a>
+  </div>
+</body>
+</html>

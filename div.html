@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>div 練習</title>
+</head>
+
+<body>
+	<section style="background-color: lightblue; display: flex;">
+		<div style="width: 300px; border: 1px solid red; flex: 1;">
+			<h1 style="text-align: center;">標題一</h1>
+			<p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam excepturi incidunt ab similique repellat facere voluptatum odio debitis doloremque omnis. Dolorem at id, consectetur quasi fugit similique non praesentium unde.
+			</p>
+			<figure>
+				<img src="images/600x400/main_picture.jpg" alt="黃花" style="max-width: 100%;">
+				<a href="https://google.com">
+					<figcaption>點此連結到google</figcaption>
+				</a>
+				<button type="button" id="btn">點擊</button>
+			</figure>
+		</div>
+
+		<div style="width: 300px; border: 1px solid red; flex: 1;">
+			<h1 style="text-align: center;">標題一</h1>
+			<p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam excepturi incidunt ab similique repellat facere voluptatum odio debitis doloremque omnis. Dolorem at id, consectetur quasi fugit similique non praesentium unde.
+			</p>
+			<figure>
+				<img src="images/600x400/main_picture.jpg" alt="黃花" style="max-width: 100%;">
+				<figcaption>圖片說明</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<Script>
+		const id = document.querySelector('#btn');
+		id.addEventListener('click',function(evt){
+			alert('按鈕被點擊了');
+			
+		});
+
+	</Script>
+
+</body>
+</html>
